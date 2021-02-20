@@ -1,13 +1,34 @@
 import React from "react"
-function App() {
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
+import Nav from "./components/Nav"
+
+import Home from "./views/Home"
+import About from "./views/About"
+import Chat from "./views/Chat"
+import NotFound from "./views/NotFound"
+
+function App() {
   return (
-    <div>
-      <header>
-        <h1 class="font-bold text-lg">Daily Chat Demo</h1>
-      </header>
-    </div>
-  );
+    <Router>
+      <Nav />
+       <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/chat">
+          <Chat />
+        </Route>
+        <Route>
+          <NotFound />
+        </Route>
+      </Switch>
+    </Router>
+
+  )
 }
 
-export default App;
+export default App

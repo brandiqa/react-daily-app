@@ -1,7 +1,9 @@
 {
   "name": "react-app",
   "version": "0.1.0",
+  "description": "Video Chat App demonstration built using Daily.co",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@daily-co/daily-js": "^0.9.998",

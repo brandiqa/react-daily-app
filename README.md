@@ -18,6 +18,8 @@ yarn start
 
 Open your browser and set the URL `http://localhost:3000` to access the application. The vide chat interface is on the Chat page.
 
+Alternatively, you can just go to the public folder and open the `daily-demo.html` file which using a different script.
+
 ## License
 
 The MIT License (MIT)
